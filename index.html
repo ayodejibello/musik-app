@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluetopia : local music player</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="free">
+        <button id="menu-btn">
+          Song list<img src="./images/hamburger-icon.svg" alt="list" />
+        </button>
+        <h1>Bluetopia</h1>
+        <p class="app-desc">
+          This is a sleek and responsive music player built with vanilla HTML,
+          CSS, and JavaScript. It plays local audio files with features like :
+        </p>
+        <ul id="list2">
+          <li>Play/Pause</li>
+          <li>Next/Previous track</li>
+          <li>Dynamic song title and artist update</li>
+          <li>Progress bar with seeking</li>
+          <li>Real-time duration and current time display</li>
+          <li>Autoplay next song</li>
+        </ul>
+        <p class="app-desc">
+          The UI is minimal yet functional, designed for smooth user experience
+          across devices. This project helped me strengthen my DOM manipulation,
+          event handling and UI responsive skills.
+        </p>
+        <audio id="audio" src=""></audio>
+        <div class="bottom-section">
+          <!-- mobile list -->
+          <ul class="mobile-list">
+            <button id="cancel-btn">
+              <img src="./images/cancel-icon.svg" alt="cancel" width="10px" />
+            </button>
+          </ul>
+          <input type="range" id="progress" min="0" step="1" value="0" />
+          <div class="music-bar">
+            <!-- song details -->
+            <div class="bar-song-details">
+              <h6>Playing now</h6>
+              <h5 id="song-artist"></h5>
+              <h4 id="song-title"></h4>
+            </div>
+            <h3 id="current-time"></h3>
+            <div class="btns-container">
+              <button class="contr-btns" id="contr-btn1">
+                <img
+                  src="./images/skip_previous_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+                  alt=""
+                />
+              </button>
+              <button class="contr-btns" id="contr-btn2">
+                <img
+                  src="./images/play_arrow_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+                  alt=""
+                  id="d-icon"
+                />
+              </button>
+              <button class="contr-btns" id="contr-btn3">
+                <img
+                  src="./images/skip_next_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div>
+              <h3 id="duration"></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <ul class="music-list">
+        <h2>Song list</h2>
+      </ul>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

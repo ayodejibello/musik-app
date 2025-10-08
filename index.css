@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: rgb(68, 195, 253);
+}
+#menu-btn {
+  display: none;
+}
+body {
+  font-family: montserrat;
+  background-image: url("./images/hoobies-concept-indian-young-man-tights-sitting-living-room-musician-playing-guitar.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.89);
+  color: antiquewhite;
+}
+main {
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgba(4, 63, 153, 0.5),
+    rgba(0, 0, 0, 0.63),
+    rgba(46, 71, 185, 0.5),
+    rgba(0, 0, 0, 0.601)
+  );
+  display: flex;
+}
+.free {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.music-list {
+  width: 30%;
+  border-radius: 4px;
+  background: linear-gradient(
+    45deg,
+    rgba(2, 75, 104, 0.829),
+    rgba(0, 0, 0, 0.774)
+  );
+  margin: 10px;
+}
+.app-desc {
+  margin-top: 10px;
+  font-weight: light;
+  font-size: 13px;
+  width: 70%;
+}
+.bottom-section {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+.music-bar {
+  background: linear-gradient(
+    50deg,
+    rgba(0, 0, 0, 0.849),
+    rgba(0, 0, 0, 0.692),
+    rgba(2, 67, 110, 0.856)
+  );
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+}
+.btns-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: center;
+}
+.contr-btns {
+  background-color: rgba(247, 247, 247, 0.945);
+  border: none;
+  color: white;
+  height: max-content;
+  cursor: pointer;
+}
+.contr-btns:active {
+  background-color: gray;
+}
+#progress {
+  cursor: pointer;
+}
+#contr-btn1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+  align-items: center;
+}
+#contr-btn2 {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+#contr-btn3 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+  align-items: center;
+}
+.bar-song-details {
+  font-weight: lighter;
+  color: rgb(233, 232, 232);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3px;
+  justify-self: flex-start;
+}
+#song-artist {
+  color: rgb(4, 127, 184);
+}
+.app-desc {
+  font-size: 14px;
+}
+#list2 {
+  padding: 10px;
+  list-style-type: circle;
+  font-size: 14px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 4px;
+}
+.songListItem {
+  padding: 10px 5px;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.songListItem:active {
+  background-color: rgba(2, 123, 160, 0.842);
+}
+.songListItem:hover {
+  background-color: rgba(136, 227, 255, 0.295);
+}
+#duration {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+#current-time {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.mobile-list {
+  display: none;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 400;
+  row-gap: 3px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.956),
+    rgba(6, 110, 180, 0.929)
+  );
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  overflow: scroll;
+  z-index: 100;
+  scrollbar-width: none;
+}
+
+@media (max-width: 1080px) {
+  #menu-btn {
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 14px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-family: montserrat;
+    border: none;
+    cursor: pointer;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(68, 195, 253);
+  }
+  h6 {
+    font-size: 8px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  body {
+    font-family: montserrat;
+    background-image: url("./images/hoobies-concept-indian-young-man-tights-sitting-living-room-musician-playing-guitar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: antiquewhite;
+  }
+  main {
+    height: 100vh;
+    background: linear-gradient(
+      45deg,
+      rgba(4, 63, 153, 0.6),
+      rgba(0, 0, 0, 0.63),
+      rgba(46, 71, 185, 0.6),
+      rgba(0, 0, 0, 0.601)
+    );
+    display: flex;
+    position: relative;
+  }
+  .free {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .music-list {
+    display: none;
+    width: max-content;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.774);
+    margin: 10px;
+  }
+  .mobile-list {
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    row-gap: 3px;
+    background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.956),
+      rgba(6, 110, 180, 0.929)
+    );
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60vh;
+    overflow: scroll;
+    z-index: 100;
+    scrollbar-width: none;
+  }
+  #app-desc {
+    font-weight: lighter;
+    font-size: 10px;
+    width: 70%;
+  }
+  .bottom-section {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .music-bar {
+    background: linear-gradient(
+      50deg,
+      rgba(0, 0, 0, 0.849),
+      rgba(0, 0, 0, 0.692),
+      rgba(2, 67, 110, 0.856)
+    );
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  .btns-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: center;
+  }
+  .contr-btns {
+    background-color: rgba(247, 247, 247, 0.945);
+    border: none;
+    color: white;
+    height: max-content;
+    cursor: pointer;
+  }
+  .contr-btns:active {
+    background-color: gray;
+  }
+
+  #contr-btn1 {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 100%;
+    align-items: center;
+  }
+  #contr-btn2 {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    align-items: center;
+  }
+
+  #contr-btn3 {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 100%;
+    align-items: center;
+  }
+  .bar-song-details {
+    font-weight: lighter;
+    color: rgb(233, 232, 232);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3px;
+    justify-self: flex-start;
+  }
+  #song-artist {
+    color: rgb(4, 127, 184);
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 4px;
+  }
+  .songListItem {
+    padding: 10px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .songListItem:active {
+    background-color: rgba(2, 123, 160, 0.842);
+  }
+  .songListItem:hover {
+    background-color: rgba(136, 227, 255, 0.295);
+  }
+  #duration {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  #current-time {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  #cancel-btn {
+    background-color: rgb(5, 0, 46);
+    border: none;
+    width: max-content;
+    padding: 5px;
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+  }
+  #cancel-btn:hover {
+    background-color: gray;
+  }
+}
